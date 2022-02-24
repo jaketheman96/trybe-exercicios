@@ -1,0 +1,33 @@
+h1 {
+    font-size: 65px;
+    color: darkorange;
+  }
+  ul {
+    background-color: blue;
+  }
+  .cor {
+    background-color: aqua;
+  }
+  h1 {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    line-height: 5cm;
+    text-decoration: underline;
+}
+p {
+    font-weight: 600;
+    font-size: 48px;
+    font-style: italic;
+}
+body {
+    font-size: 16px;
+}
+.amarelo {
+    background-color: darkgoldenrod;
+}
+.vermelho {
+    background-color: darkred;
+}
+.marrom {
+    background-color: rgb(192, 86, 44);
+}
