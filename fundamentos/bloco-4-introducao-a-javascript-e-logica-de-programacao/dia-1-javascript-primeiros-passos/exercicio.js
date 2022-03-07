@@ -1,7 +1,8 @@
 const a = 28;
 const b = 52;
-const c = 87;
+const c = 89;
 
+/* 1- */
 /* Adição */
 let adicao = a + b;
 
@@ -17,7 +18,7 @@ let divisao = a / b;
 /* Módulo */
 let modulo = a % b;
 
-/* Retornando o maior valor entre dois numeros */
+/* 2- Retornando o maior valor entre dois numeros */
 if (a > b) {
     console.log(a);
 }
@@ -25,7 +26,7 @@ else if (a < b) {
     console.log(b);
 }
 
-/* Retornando o maior de três números */
+/* 3- Retornando o maior de três números */
 if (a > b && a > c) {
     console.log(a);
 }
@@ -34,4 +35,15 @@ else if (b > a && b > c) {
 }
 else if (c > a && c > b) {
     console.log(c);
+}
+
+/* 4- Retornar positivo ou negativo */
+if (c > 0) {
+    console.log("positive");
+}
+else if (c < 0) {
+    console.log("negative");
+}
+else {
+    console.log("zero");
 }
