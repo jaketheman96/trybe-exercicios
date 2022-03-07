@@ -47,3 +47,15 @@ else if (c < 0) {
 else {
     console.log("zero");
 }
+
+/* 5- três angulos internos de um triangulo */
+const ladoUm = 80;
+const ladoDois = 20;
+const ladoTres = 80;
+
+if (ladoUm + ladoDois + ladoTres == 180) {
+    console.log("É um triângulo")
+}
+else {
+    console.log("Não é um triangulo")
+}
