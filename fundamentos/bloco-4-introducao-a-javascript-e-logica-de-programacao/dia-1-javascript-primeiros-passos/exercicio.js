@@ -105,3 +105,15 @@ if (x%2 == 1 || y%2 ==1 || z%2 == 1) {
 } else {
     console.log("False");
 }
+
+/* 10- Calculo do lucro */
+const custoProduto = 85;
+const vendaProduto = 120;
+let valorCustoTotal = custoProduto + (custoProduto/100*20);
+let lucro = (vendaProduto - valorCustoTotal)*1000;
+
+if (custoProduto < 0 || vendaProduto < 0){
+    console.log("ERRO: Encerrando caso")
+} else {
+    console.log("Caso vendermos mil desses produtos, iremos lucrar R$" + lucro);
+}
