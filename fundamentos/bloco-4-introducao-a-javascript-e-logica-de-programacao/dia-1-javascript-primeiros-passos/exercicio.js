@@ -59,3 +59,13 @@ if (ladoUm + ladoDois + ladoTres == 180) {
 else {
     console.log("Não é um triangulo")
 }
+
+/* 6- Peça de Xadrez */
+let peçaXadrez = "rei";
+
+if (peçaXadrez = "rei") {
+    console.log("Peça: " + peçaXadrez.toLocaleUpperCase() + " / " + "Direção: " + "1 passo horizontal, vertical ou diagonal");
+} else {
+    console.log("ainda não temos informação dessa peça.")
+}
+
