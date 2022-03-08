@@ -98,3 +98,10 @@ if (x%2 == 0 || y%2 == 0 || z%2 == 0) {
 } else {
     console.log("False");
 }
+
+/* 9- Retornar true se um dos 3 números for par. (Usando as mesmas constantes do exercicio anterior) */
+if (x%2 == 1 || y%2 ==1 || z%2 == 1) {
+    console.log("True");
+} else {
+    console.log("False");
+}
