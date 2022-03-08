@@ -69,3 +69,21 @@ if (peçaXadrez = "rei") {
     console.log("ainda não temos informação dessa peça.")
 }
 
+/* 7- Conversão de nota para porcentagem */
+let nota = 9999;
+
+if (nota >= 90 && nota == 100) {
+    console.log("Parabéns, você tirou um A!");
+} else if (nota >= 80 && nota < 90) {
+    console.log("Parabéns, você tirou um B!");
+} else if (nota >= 70 && nota < 80) {
+    console.log("Parabéns, você tirou um C!");
+} else if (nota >= 60 && nota < 70) {
+    console.log("Vish, estude um pouco mais, você tirou um D.");
+} else if (nota >= 50 && nota < 60) {
+    console.log("Vish, estude um pouco mais, você tirou um E.");
+} else if (nota < 50) {
+    console.log("Vish, você tirou um F.");
+} else if (nota < 0 || nota > 100) {
+    console.log("FATAL ERROR!!!!")
+}
