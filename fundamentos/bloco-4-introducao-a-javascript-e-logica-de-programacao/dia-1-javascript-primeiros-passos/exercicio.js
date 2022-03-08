@@ -87,3 +87,14 @@ if (nota >= 90 && nota == 100) {
 } else if (nota < 0 || nota > 100) {
     console.log("FATAL ERROR!!!!")
 }
+
+/* 8- Retornar true se um dos 3 números for par. */
+const x = 23;
+const y = 28;
+const z = 35;
+
+if (x%2 == 0 || y%2 == 0 || z%2 == 0) {
+    console.log("True");
+} else {
+    console.log("False");
+}
