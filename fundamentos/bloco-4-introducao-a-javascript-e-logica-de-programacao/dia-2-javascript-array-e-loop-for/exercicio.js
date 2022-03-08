@@ -11,3 +11,10 @@ for (let index = 0; index < numbers.length; index++) {
 }
 console.log(soma);
 
+/* 3- Calcule a média aritmética dos valores do array */
+let média = 0;
+
+for (let i = 0; i < numbers.length; i++) {
+    média = soma / numbers.length;
+}
+console.log(média);
