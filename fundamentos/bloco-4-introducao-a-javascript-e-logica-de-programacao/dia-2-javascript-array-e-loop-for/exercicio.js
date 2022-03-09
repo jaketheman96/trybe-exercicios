@@ -53,3 +53,12 @@ if (impar > 0) {
 else {
     console.log("Não há ímpar");
 }
+
+/* 7- Menor valor contido no array */
+let menor = 0;
+for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] < menor) {
+        menor = numbers[i];
+    }
+}
+console.log("o menor número da array é " + menor);
