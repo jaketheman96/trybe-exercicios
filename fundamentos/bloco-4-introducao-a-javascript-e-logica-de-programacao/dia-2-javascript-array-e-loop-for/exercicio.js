@@ -62,3 +62,9 @@ for (let i = 0; i < numbers.length; i++) {
     }
 }
 console.log("o menor número da array é " + menor);
+
+let divisao = 0;
+for (let i = 0; i < numbers.length; i++) {
+    divisao = numbers[i] / 2
+    console.log(divisao);
+}
