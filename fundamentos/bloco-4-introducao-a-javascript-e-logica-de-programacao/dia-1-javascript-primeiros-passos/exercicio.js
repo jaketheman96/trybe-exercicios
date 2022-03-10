@@ -19,23 +19,29 @@ let divisao = a / b;
 let modulo = a % b;
 
 /* 2- Retornando o maior valor entre dois numeros */
-if (a > b) {
-    console.log(a);
+function maiorValor(a, b) {
+    if (a > b) {
+        console.log(a);
+    }
+    else if (a < b) {
+        console.log(b);
+    }
 }
-else if (a < b) {
-    console.log(b);
-}
+console.log(maiorValor(25, 10))
 
 /* 3- Retornando o maior de três números */
-if (a > b && a > c) {
-    console.log(a);
+function maiorNumero(a, b, c) {
+    if (a > b && a > c) {
+        console.log(a);
+    }
+    else if (b > a && b > c) {
+        console.log(b);
+    }
+    else if (c > a && c > b) {
+        console.log(c);
+    }
 }
-else if (b > a && b > c) {
-    console.log(b);
-}
-else if (c > a && c > b) {
-    console.log(c);
-}
+console.log(maiorNumero(5, 99, 854))
 
 /* 4- Retornar positivo ou negativo */
 if (c > 0) {
@@ -93,14 +99,14 @@ const x = 23;
 const y = 28;
 const z = 35;
 
-if (x%2 == 0 || y%2 == 0 || z%2 == 0) {
+if (x % 2 == 0 || y % 2 == 0 || z % 2 == 0) {
     console.log("True");
 } else {
     console.log("False");
 }
 
 /* 9- Retornar true se um dos 3 números for par. (Usando as mesmas constantes do exercicio anterior) */
-if (x%2 == 1 || y%2 ==1 || z%2 == 1) {
+if (x % 2 == 1 || y % 2 == 1 || z % 2 == 1) {
     console.log("True");
 } else {
     console.log("False");
@@ -109,10 +115,10 @@ if (x%2 == 1 || y%2 ==1 || z%2 == 1) {
 /* 10- Calculo do lucro */
 const custoProduto = 85;
 const vendaProduto = 120;
-let valorCustoTotal = custoProduto + (custoProduto/100*20);
-let lucro = (vendaProduto - valorCustoTotal)*1000;
+let valorCustoTotal = custoProduto + (custoProduto / 100 * 20);
+let lucro = (vendaProduto - valorCustoTotal) * 1000;
 
-if (custoProduto < 0 || vendaProduto < 0){
+if (custoProduto < 0 || vendaProduto < 0) {
     console.log("ERRO: Encerrando caso")
 } else {
     console.log("Caso vendermos mil desses produtos, iremos lucrar R$" + lucro);
