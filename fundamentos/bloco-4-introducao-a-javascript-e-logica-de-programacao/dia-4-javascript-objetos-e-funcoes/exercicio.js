@@ -83,11 +83,11 @@ let leitor = {
 console.log('O livro favorito de ' + leitor.nome + ' ' + leitor.sobrenome + ' se chama "' + leitor.livrosFavoritos[0].titulo + '"');
 
 /* 7 */
-/* leitor.livrosFavoritos.push({
+leitor.livrosFavoritos.push({
   titulo: 'Harry Potter e o Prisioneiro de Azkaban',
   autor: 'JK Rowling',
   editora: 'Rocco',
-}) */
+})
 
 /* 8 */
 if (leitor.livrosFavoritos.length === 1) {
@@ -95,3 +95,42 @@ if (leitor.livrosFavoritos.length === 1) {
 } else {
   console.log(leitor.nome + ' tem ' + leitor.livrosFavoritos.length + ' livros favoritos.')
 }
+
+/* Exercícios funções */
+/* 1 */
+function verificaPalindrome(word) {
+  for (index in word) {
+    if (word[index] != word[(word.length - 1) - index]) {
+      return false;
+    }
+  }
+  return true;
+}
+console.log(verificaPalindrome('arara'));
+console.log(verificaPalindrome('desenvolvimento'));
+
+/* 2 */
+function maiorValor(array) {
+  let maiorValor = 0;
+  for (let index in array) {
+    if (array[maiorValor] < array[index]) {
+      maiorValor = index;
+    }
+  }
+  console.log(maiorValor);
+}
+maiorValor([2, 3, 6, 7, 10, 1]);
+
+/* 3 */
+
+function menorValor(array) {
+  let menorValor = 0;
+  for (let index in array) {
+    if (array[menorValor] > array[index]) {
+      menorValor = index;
+    }
+  }
+  console.log(menorValor);
+}
+menorValor([2, 3, 6, 7, 10, 1]);
+
