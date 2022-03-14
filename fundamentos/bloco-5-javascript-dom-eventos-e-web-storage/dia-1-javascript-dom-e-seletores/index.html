@@ -91,6 +91,15 @@
       paragraph.innerHTML = paragraph.innerHTML.toUpperCase();
     }
     upperCase();
+
+    /* 6 */
+    function showContent() {
+      let paragraph = document.getElementsByTagName('p');
+      for(let i = 0; i < paragraph.length; i++) {
+        console.log(paragraph[i]);
+      }
+    }
+    showContent();
   </script>
 </body>
 
