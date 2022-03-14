@@ -55,7 +55,7 @@
 3-Crie uma função que mude a cor do quadrado vermelho para branco.
 4-Crie uma função que corrija o texto da tag <h1>.
 5-Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
-Crie uma função que exiba o conteúdo de todas as tags <p> no console.
+6-Crie uma função que exiba o conteúdo de todas as tags <p> no console.
     */
     /* 1 */
     function change() {
@@ -84,6 +84,13 @@ Crie uma função que exiba o conteúdo de todas as tags <p> no console.
       corrigir.innerText = 'Exercício 5.1 - Javascript';
     }
     console.log(corrigirTexto());
+
+    /* 5 */
+    function upperCase() {
+      let paragraph = document.getElementsByTagName('p')[0];
+      paragraph.innerHTML = paragraph.innerHTML.toUpperCase();
+    }
+    upperCase();
   </script>
 </body>
 
