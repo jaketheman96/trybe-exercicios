@@ -59,7 +59,7 @@ Crie uma função que exiba o conteúdo de todas as tags <p> no console.
     */
     /* 1 */
     function change() {
-      let descrição = document.getElementsByTagName('p')[0].innerText = 'Me vejo em um emprego e com os hardskills super bem desenvolvidos.';
+      let descrição = document.getElementsByTagName('p')[1].innerText = 'Me vejo em um emprego e com os hardskills super bem desenvolvidos.';
       return descrição;
     }
     console.log(change());
@@ -67,9 +67,16 @@ Crie uma função que exiba o conteúdo de todas as tags <p> no console.
     /* 2 */   
     function changeColor() {
       let corVerde = document.getElementsByClassName('main-content')[0];
-      corVerde.style.background = 'rgb(76,164,109';
+      corVerde.style.background = 'rgb(76,164,109)';
     }
     console.log(changeColor());
+
+    /* 3 */
+    function changeBackground() {
+      let corBranca = document.getElementsByClassName('center-content')[0];
+      corBranca.style.background = 'white';
+    }
+    console.log(changeBackground());
   </script>
 </body>
 
