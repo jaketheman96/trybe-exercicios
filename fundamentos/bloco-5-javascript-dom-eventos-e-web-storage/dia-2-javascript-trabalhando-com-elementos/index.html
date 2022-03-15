@@ -101,6 +101,16 @@
     addImage.classList.add('small-image');
     addSection2.appendChild(addImage);
 
+    /* 8 */
+    let addList = document.createElement('ul');
+    let values = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+    for (let i = 0; i < values.length; i++) {
+      let elementLi = document.createElement('li');
+      elementLi.innerHTML = values[i];
+      addList.appendChild(elementLi);      
+    }
+    addSection3.appendChild(addList);
+
   </script>
 </body>
 
