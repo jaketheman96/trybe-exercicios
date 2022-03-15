@@ -63,7 +63,7 @@
     let adding = document.createElement('h1');
     adding.innerText = 'Exercício 5.2 - JavaScript DOM';
     document.body.appendChild(adding);
-   console.log(adding);
+    console.log(adding);
 
     /* 2 */
     let addMain = document.createElement('main');
@@ -82,8 +82,14 @@
     addSection.appendChild(addParagraph);
     addParagraph.innerText = 'Olá gente, espero que todos estejam tendo um ótimo dia, não esqueçam de tomar a bendita água';
     console.log(addParagraph);
-    
-    </script>
+
+    /* 5 */
+    let addSection2 = document.createElement('section');
+    addSection2.classList.add('left-content');
+    addMain.appendChild(addSection2);
+    console.log(addSection2);
+
+  </script>
 </body>
 
 </html>
