@@ -59,12 +59,18 @@
 
 <body>
   <script>
+    /* 1 */
     let adding = document.createElement('h1');
     adding.innerText = 'Exercício 5.2 - JavaScript DOM';
-    let merge = document.body.appendChild(adding);
-    console.log(adding);
-    console.log(merge);
-  </script>
+    document.body.appendChild(adding);
+   console.log(adding);
+
+    /* 2 */
+    let addMain = document.createElement('main');
+    addMain.classList.add('main-content');
+    document.body.appendChild(addMain);
+    console.log(addMain);
+    </script>
 </body>
 
 </html>
