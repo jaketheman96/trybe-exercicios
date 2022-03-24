@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Header da página</h1>
+    </header>
+    <main>
+        <form method="get">
+            <fieldset id="container">
+                <section>
+                    <label for="word">Nome:</label>
+                    <input required type="text" name="username" id="word">
+                </section>
+                <section>
+                    <label for="word">Email:</label>
+                    <input type="email" name="email" id="email" required>
+                </section>
+                <br>
+                <section>
+                    <input type="radio" name="cidades" class="radios" value="curitiba">
+                    <label for="destination1">Curitiba</label>
+                    <input type="radio" name="cidades" class="radios" value="friodejaneiro">
+                    <label for="destination2">Frio de Janeiro</label>
+                    <input type="radio" name="cidades" class="radios" value="amazonas">
+                    <label for="destination3">Amazonas</label>
+                    <input type="radio" name="cidades" class="radios" value="acre">
+                    <label for="destination4">Acre</label>
+                </section>
+                <br>
+                <section>
+                    <label for="reason">Nos informe o motivo de escolher esse local:</label>
+                    <br>
+                    <textarea name="resume" id="" cols="80" rows="10"></textarea>
+                    <br>
+                </section>
+                <section>
+                    <label for="date">Data:</label>
+                    <input type="date" name="date" id="date">
+                </section>
+                <br>
+                <section>
+                    <label for="termos">Eu aceito e concordo com os termos e contratos para a viagem.</label>
+                    <input type="checkbox" name="contract" id="contract" required>
+                    <br>
+                    <label for="termos">Eu confirmo a minha presença</label>
+                    <input type="checkbox" name="contract" id="contract" required>
+                </section>
+            </fieldset>
+            <input type="submit" value="Submit" id="submit-button">
+            <input type="reset" value="Clear" class='clearButton'>
+            <p class="paragrafo"></p>
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
