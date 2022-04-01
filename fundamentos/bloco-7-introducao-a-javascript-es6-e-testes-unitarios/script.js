@@ -11,3 +11,9 @@ const testingScope = (escopo) => {
 
 testingScope(true);
 
+const oddsAndEvens = [13, 3, 4, 10, 7, 2];
+oddsAndEvens.sort(compare);
+function compare(a, b) {
+  return a - b;
+}
+console.log(oddsAndEvens);
