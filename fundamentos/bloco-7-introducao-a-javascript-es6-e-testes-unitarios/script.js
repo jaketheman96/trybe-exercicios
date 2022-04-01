@@ -29,3 +29,19 @@ const factorial = num => (num == 1 || num == 0) ? 1 : (num - 1) * num;
 //   return factorial(num - 1) * num;
 // }
 console.log(factorial(20));
+
+/* 2 */
+
+let phrase = 'Antônio foi no banheiro e não sabemos o que aconteceu';
+
+const getWord = () => {
+  let words = phrase.split(" ");
+  let biggerWord = '';
+  for (let i = 0; i < words.length; i += 1) {
+    if (words[i].length > biggerWord.length) {
+      biggerWord = words[i];
+    }
+  };
+  return biggerWord;
+};
+console.log(getWord(phrase));
