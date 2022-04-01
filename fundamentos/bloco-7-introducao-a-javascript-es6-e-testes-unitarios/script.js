@@ -3,7 +3,7 @@ const testingScope = (escopo) => {
     let ifScope = 'Não devo ser utilizada fora do meu escopo (if)';
     ifScope = `${ifScope} ótimo, fui utilizada no escopo !`;
     console.log(ifScope);
-    } else {
+  } else {
     let elseScope = `Não devo ser utilizada fora meu escopo (else)`;
     console.log(elseScope);
   };
@@ -17,3 +17,15 @@ function compare(a, b) {
   return a - b;
 }
 console.log(oddsAndEvens);
+
+/* parte 2 */
+
+/* 1 */
+
+const factorial = num => (num == 1 || num == 0) ? 1 : (num - 1) * num;
+//   if (num == 1 || num == 0) {
+//     return 1;
+//   }
+//   return factorial(num - 1) * num;
+// }
+console.log(factorial(20));
