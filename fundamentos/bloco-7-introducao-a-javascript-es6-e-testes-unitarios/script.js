@@ -45,3 +45,12 @@ const getWord = () => {
   return biggerWord;
 };
 console.log(getWord(phrase));
+
+/* 3 */
+
+let contador = 0;
+
+function counteringClick() {
+  contador++;
+  document.getElementById('display').innerHTML = ` ${contador} `;
+};
