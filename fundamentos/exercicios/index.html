@@ -18,12 +18,11 @@
   <p id='result'></p>
   <script>
     function verifyNumber(value1, value2) {
-      if (isNaN(value1) || isNaN(value2)) {
-        throw new Error('Só números, por gentileza!');
-      }
-
       if (value1 === '' || value2 === '') {
         throw new Error('É necessário inserir os valores');
+      }
+      if (isNaN(value1) || isNaN(value2)) {
+        throw new Error('Só números, por gentileza!');
       }
     };
     function sum(value1, value2) {
