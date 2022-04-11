@@ -62,3 +62,7 @@ const books = [
 ];
 
 // Adicione o código do exercício aqui:
+
+/* 1 */
+const arrayBooks = books.map((book) => `${book.name} - ${book.genre} - ${book.author.name}`);
+console.log(arrayBooks);
