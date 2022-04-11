@@ -78,3 +78,9 @@ function nameAndAge() {
     .sort((a, b) => a.age - b.age); /* ordena ages do objeto criado */
 };
 // console.log(nameAndAge());
+
+/* 3 */
+function fantasyOrScienceFiction() {
+  return books.filter((book) => book.genre === 'Ficção Científica' || book.genre === 'Fantasia');
+};
+console.log(fantasyOrScienceFiction());
