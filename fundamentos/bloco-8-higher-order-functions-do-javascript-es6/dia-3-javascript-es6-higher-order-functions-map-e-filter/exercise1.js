@@ -73,8 +73,8 @@ function nameAndAge() {
   return books.map((book) => ({
     age: book.releaseYear - book.author.birthYear,
     author: book.author.name,
-  }
-  ))
+  })
+  )
     .sort((a, b) => a.age - b.age); /* ordena ages do objeto criado */
 };
 // console.log(nameAndAge());
@@ -83,4 +83,10 @@ function nameAndAge() {
 function fantasyOrScienceFiction() {
   return books.filter((book) => book.genre === 'Ficção Científica' || book.genre === 'Fantasia');
 };
-console.log(fantasyOrScienceFiction());
+// console.log(fantasyOrScienceFiction());
+
+/* 4 */
+function oldBooksOrdered() {
+  return books.filter((book) => (book.releaseYear < 1962)).sort((a, b) => (a.releaseYear - b.releaseYear));
+};
+console.log(oldBooksOrdered());
