@@ -1,0 +1,25 @@
+#title {
+    color: rgb(78, 78, 78);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 25px;
+}
+
+#container {
+    border: 1px solid black;
+    margin: 15px;
+    padding: 15px;
+}
+
+#word {
+    padding: 2px;
+}
+
+#email {
+    padding: 2px;
+    margin-left: 4px;
+    margin-top: 10px;
+}
+
+#submit-button {
+    margin-left: 20px;
+}
