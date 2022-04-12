@@ -1,1 +1,1 @@
-Realizando exercícios da Trybe!
+Realizando exercícios/8.2 da Trybe!
