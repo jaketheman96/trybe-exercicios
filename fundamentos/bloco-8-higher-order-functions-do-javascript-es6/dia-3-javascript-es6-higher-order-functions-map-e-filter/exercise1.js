@@ -97,7 +97,7 @@ function fantasyOrScienceFictionAuthors() {
   return books.filter((book) => gêneros.includes(book.genre)).map((book) => book.author.name).sort();
 };
 // console.log(fantasyOrScienceFictionAuthors());
-// função includes etermina se um array contém um determinado elemento, retornando true ou false apropriadamente.
+// função includes determina se um array contém um determinado elemento, retornando true ou false apropriadamente.
 // https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/includes
 
 /* 6 */
@@ -105,4 +105,11 @@ function oldBooks() {
   const currentYear = new Date().getFullYear();/* seleciona o ano atual */
   return books.filter((book) => ((currentYear - book.releaseYear) > 60)).map((book) => book.name);
 };
-console.log(oldBooks());
+// console.log(oldBooks());
+
+/* 7 */
+function authorWith3DotsOnName() {
+  return books.filter((book) => book.author.name.includes('J. R. R.')).map((book) => book.name);
+};
+console.log(authorWith3DotsOnName());
+/* Função includes certifica a informação dentro do parênteses) */
