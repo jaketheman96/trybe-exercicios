@@ -96,6 +96,13 @@ function fantasyOrScienceFictionAuthors() {
   const gêneros = ['Fantasia', 'Ficção Científica'];
   return books.filter((book) => gêneros.includes(book.genre)).map((book) => book.author.name).sort();
 };
-console.log(fantasyOrScienceFictionAuthors());
+// console.log(fantasyOrScienceFictionAuthors());
 // função includes etermina se um array contém um determinado elemento, retornando true ou false apropriadamente.
 // https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/includes
+
+/* 6 */
+function oldBooks() {
+  const currentYear = new Date().getFullYear();/* seleciona o ano atual */
+  return books.filter((book) => ((currentYear - book.releaseYear) > 60)).map((book) => book.name);
+};
+console.log(oldBooks());
