@@ -7,5 +7,5 @@ const arrays = [
 function flatten() {
   return arrays.reduce((acc, array) => acc.concat(array), []);
 }
-console.log(flatten());
+// console.log(flatten());
 // function concat, para concatenar as infos em uma array.
