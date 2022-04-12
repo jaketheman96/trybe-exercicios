@@ -89,4 +89,13 @@ function fantasyOrScienceFiction() {
 function oldBooksOrdered() {
   return books.filter((book) => (book.releaseYear < 1962)).sort((a, b) => (a.releaseYear - b.releaseYear));
 };
-console.log(oldBooksOrdered());
+// console.log(oldBooksOrdered());
+
+/* 5 */
+function fantasyOrScienceFictionAuthors() {
+  const gêneros = ['Fantasia', 'Ficção Científica'];
+  return books.filter((book) => gêneros.includes(book.genre)).map((book) => book.author.name).sort();
+};
+console.log(fantasyOrScienceFictionAuthors());
+// função includes etermina se um array contém um determinado elemento, retornando true ou false apropriadamente.
+// https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/includes
