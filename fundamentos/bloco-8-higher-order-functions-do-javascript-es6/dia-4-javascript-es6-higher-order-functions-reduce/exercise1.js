@@ -83,3 +83,11 @@ function reduceNames() {
 }
 // console.log(reduceNames());
 // condicional ternary operator utilizado para adicionar a "." na última posição do array e "," nos restantes
+
+/* 3 */
+function averageAge() {
+  const numberOfBooks = books.length
+  const idade = books.reduce((acc, book) => acc + (book.releaseYear - book.author.birthYear), 0);/* soma de todas as idades dos autores. */
+  return idade / numberOfBooks;
+};
+console.log(averageAge());
