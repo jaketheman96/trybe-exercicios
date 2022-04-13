@@ -90,4 +90,15 @@ function averageAge() {
   const idade = books.reduce((acc, book) => acc + (book.releaseYear - book.author.birthYear), 0);/* soma de todas as idades dos autores. */
   return idade / numberOfBooks;
 };
-console.log(averageAge());
+// console.log(averageAge());
+
+/* 4 */
+function longestNamedBook() {
+  return books.reduce((currentBook, biggestBook) => {
+    if (currentBook.name > biggestBook.name.length){
+      return currentBook;
+    }
+    return biggestBook;
+  });
+};
+console.log(longestNamedBook());
