@@ -1,0 +1,8 @@
+.App {
+  text-align: center;
+}
+
+.pokemonInfo {
+  border: 1px solid black;
+  display: inline-block;
+}
